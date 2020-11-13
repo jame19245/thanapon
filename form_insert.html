@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Comment Form</title>
+	<title>Insert Form</title>
 </head>
 <body>
     <div class="form">
         <p>Insert</p>
-        <p><a href="show.php">Show</a><p>
+        <p><a href="show.php">Show</a></p>
         <p><a href="form_edit.html">Edit</a></p>
-        <p><a href="form_delete.html">Delete</a><p>
+        <p><a href="form_delete.html">Delete</a></p>
     </div>
   <form action = "insert.php" method = "post" id="CommentForm" >
-    Name:<br>
+    Insert Name:<br>
     <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
-    Comment:<br>
+    Insert Comment:<br>
     <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>
-    Link:<br>
-    <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
     <a href="show.php"><input type="submit" id="commentBtn"></a>
   </form>
 </body>
