@@ -12,7 +12,7 @@ $name = $_POST['name'];
 $comment = $_POST['comment'];
 
 
-$sql = "INSERT INTO guestbook (name , Comment , Link) VALUES ('$name', '$comment')";
+$sql = "INSERT INTO guestbook (name , Comment) VALUES ('$name', '$comment')";
 
 
 if (mysqli_query($conn, $sql)) {
