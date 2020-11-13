@@ -12,7 +12,7 @@ $name = $_REQUEST['name'];
 
 
 
-$sql = "DELETE FROM guestbook WHERE id=$name";
+$sql = "DELETE FROM guestbook WHERE name=$name";
 
 
 
