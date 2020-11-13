@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comment Form</title>
+</head>
+<body>
+    <div class="form">
+        <p>Edit</p>
+        <p><a href="show.php">Show</a><p>
+        <p><a href="form_insert.html">insert</a></p>
+        <p><a href="form_delete.html">Delete</a><p>
+    </div>
+  <form action = "edit.php" method = "post" id="CommentForm" >
+    Name:<br>
+    <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
+    Comment:<br>
+    <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>
+    Link:<br>
+    <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
+    <input type="submit" id="commentBtn"><a href="show.php">
+  </form>
+</body>
+</html>
