@@ -13,7 +13,7 @@ $comment = $_POST['comment'];
 $link = $_POST['link'];
 
 
-$sql = "DELETE FROM guestbook (name , Comment , Link) WHERE ('$name', '$comment', '$link')";
+$sql = "DELETE FROM guestbook WHERE (name='$name', Comment='$comment', Link='$link')";
 
 
 if (mysqli_query($conn, $sql)) {
