@@ -27,11 +27,11 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Comment'];?></td>
     <td><a href="form_edit.html"><input type="submit" value="Edit"></a><a href="form_delete.html"><input type="submit" value="Delete"></a></td>
   </tr>
-  <a href="form_insert.html"><input type="submit" value="Insert"></a>
 <?php
 }
 ?>
 </center></table>
+<a href="form_insert.html"><input type="submit" value="Insert"></a>
 <?php
 mysqli_close($conn);
 ?>
