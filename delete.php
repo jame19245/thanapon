@@ -7,12 +7,12 @@ if (mysqli_connect_errno($conn))
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 
-$id = $_REQUEST['id'];
+$name = $_REQUEST['name'];
 
 
 
 
-$sql = "DELETE FROM new_record WHERE id=$id";
+$sql = "DELETE FROM guestbook WHERE id=$name";
 
 
 
