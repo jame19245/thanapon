@@ -13,7 +13,7 @@ $comment = $_POST['comment'];
 $link = $_POST['link'];
 
 
-$sql = "DELETE FROM guestbook WHERE (name='$name', Comment='$comment')";
+$sql = "DELETE FROM guestbook WHERE name='$name'";
 
 
 
