@@ -7,8 +7,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-  p.ex1 {
-    margin-top: 25px;
+  p.a{
+    margin-top: 10%;
   }
 </style>
 </head>
@@ -23,7 +23,7 @@ if (mysqli_connect_errno($conn))
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
 <div class="container">
-  <table width="600" border="1" class="table table-hover" class="center"  class="ex1">
+  <table width="600" border="1" class="table table-hover" class="center"  class="a">
     <tr>
       <th width="100"> <div align="center">Name</div></th>
       <th width="350"> <div align="center">Comment </div></th>
