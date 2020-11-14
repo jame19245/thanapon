@@ -8,7 +8,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
   p.ex1 {
-    margin-top: 10%;
+    margin-top: 25px;
   }
   </style>
 </head>
