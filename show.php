@@ -31,7 +31,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     <tr>
       <td><?php echo $Result['name'];?></div></td>
       <td><?php echo $Result['Comment'];?></td>
-      <td><input type="submit" value="Edit" class="btn btn-warning" a href="form_edit.html"><input type="submit" value="Delete"  class="btn btn-danger" a href="form_delete.html"></td>
+      <td><center><input type="submit" value="Edit" class="btn btn-warning" a href="form_edit.html">&nbsp;<input type="submit" value="Delete"  class="btn btn-danger" a href="form_delete.html"></center></td>
     </tr>
   <?php
   }
