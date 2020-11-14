@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Insert Form</title>
+  <title><h1>Insert Form</h1></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    p.ex1 {
+      margin-top: 10%;
+    }
+  </style>
 </head>
 <body>
     <div class="form">
-        <p>Insert</p>
-        <p><a href="show.php">Show</a></p>
-        <p><a href="form_edit.html">Edit</a></p>
-        <p><a href="form_delete.html">Delete</a></p>
+        <p class="ex1">Insert</p>
     </div>
   <form action = "insert.php" method = "post" id="CommentForm" >
     Insert Name:<br>
     <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
     Insert Comment:<br>
     <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>
-    <a href="show.php"><input type="submit" id="commentBtn"></a>
+    <a href="show.php"><input type="submit" id="commentBtn" value="Summit" class="btn btn-info"></a>
   </form>
 </body>
 </html>
