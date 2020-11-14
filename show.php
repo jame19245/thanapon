@@ -10,7 +10,7 @@
   p.ex1 {
     margin-top: 10%;
   }
-</style>
+  </style>
 </head>
 <body>
 <?php
@@ -22,7 +22,11 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
+
 <div class="container">
+    <div class="form">
+        <p class="ex1"><h1><center>ITF Show</center></h1></p>
+    </div>
   <table width="600" border="1" class="table table-hover" class="center" class="ex1">
     <tr class="info">
       <th width="100"> <div align="center">Name</div></th>
@@ -36,7 +40,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     <tr>
       <td><center><?php echo $Result['name'];?></center></td>
       <td><center><?php echo $Result['Comment'];?></center></td>
-      <td><center><a href="form_edit.html"><input type="submit" value="Edit" class="btn btn-warning"></a>&nbsp;<a href="form_delete.html"><input type="submit" value="Delete"  class="btn btn-danger"></a></center></td>
+      <td><center><a href="form_edit.html"><input type="submit" value="Edit" class="btn btn-warning"></a>&nbsp;&nbsp;<a href="form_delete.html"><input type="submit" value="Delete"  class="btn btn-danger"></a></center></td>
     </tr>
   <?php
   }
