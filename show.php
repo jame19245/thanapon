@@ -7,7 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-  p.a{
+  p.ex1 {
     margin-top: 10%;
   }
 </style>
@@ -23,7 +23,7 @@ if (mysqli_connect_errno($conn))
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
 <div class="container">
-  <table width="600" border="1" class="table table-hover" class="center"  class="a">
+  <table width="600" border="1" class="table table-hover" class="center" class="ex1">
     <tr class="info">
       <th width="100"> <div align="center">Name</div></th>
       <th width="350"> <div align="center">Comment </div></th>
@@ -34,8 +34,8 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
   {
   ?>
     <tr>
-      <td><?php echo $Result['name'];?></div></td>
-      <td><?php echo $Result['Comment'];?></td>
+      <td><center><?php echo $Result['name'];?></center></td>
+      <td><center><?php echo $Result['Comment'];?></center></td>
       <td><center><a href="form_edit.html"><input type="submit" value="Edit" class="btn btn-warning"></a>&nbsp;<a href="form_delete.html"><input type="submit" value="Delete"  class="btn btn-danger"></a></center></td>
     </tr>
   <?php
