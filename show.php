@@ -18,7 +18,7 @@ if (mysqli_connect_errno($conn))
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
 <div class="container">
-  <table width="600" border="1" class="table table-hover"><center>
+  <table width="600" border="1" class="table table-hover" class="center">
     <tr>
       <th width="100"> <div align="center">Name</div></th>
       <th width="350"> <div align="center">Comment </div></th>
@@ -36,8 +36,8 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
   <?php
   }
   ?>
-  </center></table>
-  <input type="submit" value="Insert" class="btn btn-info" a href="form_insert.html">
+  </table>
+  <center><input type="submit" value="Insert" class="btn btn-info" a href="form_insert.html"></center>
   <?php
   mysqli_close($conn);
   ?>
