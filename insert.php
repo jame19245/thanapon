@@ -20,8 +20,16 @@ if (mysqli_query($conn, $sql)) {
     echo " <a href="show.php">Click here</a>";
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    echo " <a href="show.php">Click here</a>";
   }
 
 mysqli_close($conn);
 ?>
+
+<html>
+<head>
+    <title>Successfully</title>
+</head>
+<body>
+  <center><a href="form_insert.html"><input type="button" value="Insert" class="btn btn-info"></a></center>
+</body>
+</html>
