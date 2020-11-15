@@ -6,6 +6,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  p.ex1 {
+    margin-top: 25px;
+  }
+  </style>
 </head>
 <body>
 <?php
@@ -35,7 +40,7 @@ mysqli_close($conn);
 ?>
 
 <div class="container">
-  <center><a href="show.php"><input type="button" value="Show" class="btn btn-info"></a></center>
+  <center><a href="show.php"><input type="button" value="Show" class="btn btn-info" class="ex1"></a></center>
 </div>
 </body>
 </html>
