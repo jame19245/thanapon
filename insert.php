@@ -30,6 +30,6 @@ mysqli_close($conn);
     <title>Successfully</title>
 </head>
 <body>
-  <center><a href="form_insert.html"><input type="button" value="Insert" class="btn btn-info"></a></center>
+  <center><a href="show.php"><input type="button" value="Insert" class="btn btn-info"></a></center>
 </body>
 </html>
