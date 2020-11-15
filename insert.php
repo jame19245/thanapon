@@ -26,16 +26,16 @@ $sql = "INSERT INTO guestbook (name , Comment) VALUES ('$name', '$comment')";
 
 
 if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
+    echo "<center>New record created successfully</center>";
   } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    echo "<center>Error: </center>" . $sql . "<br>" . mysqli_error($conn);
   }
 
 mysqli_close($conn);
 ?>
 
 <div class="container">
-  <center><a href="show.php"><input type="button" value="Insert" class="btn btn-info"></a></center>
+  <center><a href="show.php"><input type="button" value="Show" class="btn btn-info"></a></center>
 </div>
 </body>
 </html>
