@@ -1,3 +1,18 @@
+<html>
+<head>
+<title>ITF Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  p.ex1 {
+    margin-top: 25px;
+  }
+  </style>
+</head>
+<body>
 <?php
 
 $conn = mysqli_init();
@@ -25,11 +40,9 @@ if (mysqli_query($conn, $sql)) {
 mysqli_close($conn);
 ?>
 
-<html>
-<head>
-    <title>Successfully</title>
-</head>
-<body>
+<div class="container">
   <center><a href="show.php"><input type="button" value="Insert" class="btn btn-info"></a></center>
+</div>
 </body>
 </html>
+
