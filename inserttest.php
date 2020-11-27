@@ -27,8 +27,8 @@
     $name = $_POST['name'];
     $height = $_POST['height'];
     $weight = $_POST['weight'];
-    $cal = pow(($height / 100), 2);
-    $bmi = ROUND(($weight / $cal), 2);
+    $calc = $weight / ($height / 100) ** 2;
+    $bmi = round($calc, 2);
 
 
     $sql = "INSERT INTO itftest (name , height, weight, bmi) VALUES ('$name', '$height', '$weight', '$bmi')";
