@@ -27,8 +27,8 @@
     $name = $_POST['name'];
     $height = $_POST['height'];
     $weight = $_POST['weight'];
-    $bmi = $weight / ($height ** 2);
-
+    $cal = $weight / (($height / 100) ** 2);
+    $bmi = round($cal, 2);
 
     $sql = "INSERT INTO itf-test (name , height, weight, bmi) VALUES ('$name', '$height', '$weight', '$bmi')";
 
