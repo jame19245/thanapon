@@ -30,7 +30,7 @@
     $bmi = $weight / (($height / 100) ** 2);
 
 
-    $sql = "INSERT INTO itf-test (name , height, weight, bmi) VALUES ('$name', '$height', '$weight', '$bmi')";
+    $sql = "INSERT INTO itftest (name , height, weight, bmi) VALUES ('$name', '$height', '$weight', '$bmi')";
 
 
     if (mysqli_query($conn, $sql)) {
