@@ -27,10 +27,14 @@
     $name = $_POST['name'];
     $height = $_POST['height'];
     $weight = $_POST['weight'];
+    $cal = pow(($height / 100), 2);
+    $bmi = ROUND(($weight / $cal), 2);
+
 
 
     $sql = "UPDATE itftest SET height='$height' WHERE name='$name'";
     $sql = "UPDATE itftest SET weight='$weight' WHERE name='$name'";
+    $sql = "INSERT INTO itftest (name , height, weight, bmi) VALUES ('$name', '$height', '$weight', '$bmi')";
 
     if (mysqli_query($conn, $sql)) {
         echo "<center>Edit Successfully</center>";
