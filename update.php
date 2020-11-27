@@ -34,7 +34,7 @@
 
     $sql = "UPDATE itftest SET height='$height' WHERE name='$name'";
     $sql = "UPDATE itftest SET weight='$weight' WHERE name='$name'";
-    $sql = "INSERT INTO itftest (name , height, weight, bmi) VALUES ('$name', '$height', '$weight', '$bmi')";
+    $sql = "UPDATE itftest SET bmi='$bmi' WHERE name='$name'";
 
     if (mysqli_query($conn, $sql)) {
         echo "<center>Edit Successfully</center>";
