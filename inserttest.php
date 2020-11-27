@@ -27,7 +27,7 @@
     $name = $_POST['name'];
     $height = $_POST['height'];
     $weight = $_POST['weight'];
-    $pow = pow($height, 2);
+    $pow = POW($height, 2);
     $bmi = $weight / $pow;
 
 
