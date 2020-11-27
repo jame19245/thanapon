@@ -29,8 +29,8 @@
     $weight = $_POST['weight'];
 
 
-    $sql = "UPDATE itf-test SET height='$height' WHERE name='$name'";
-    $sql = "UPDATE itf-test SET weight='$weight' WHERE name='$name'";
+    $sql = "UPDATE itftest SET height='$height' WHERE name='$name'";
+    $sql = "UPDATE itftest SET weight='$weight' WHERE name='$name'";
 
     if (mysqli_query($conn, $sql)) {
         echo "<center>Edit Successfully</center>";
