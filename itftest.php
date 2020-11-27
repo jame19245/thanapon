@@ -21,7 +21,7 @@
     if (mysqli_connect_errno($conn)) {
         die('Failed to connect to MySQL: ' . mysqli_connect_error());
     }
-    $res = mysqli_query($conn, 'SELECT * FROM itf-test');
+    $res = mysqli_query($conn, 'SELECT * FROM itftest');
     ?>
 
     <div class="container">
